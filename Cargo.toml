@@ -1,0 +1,25 @@
+[package]
+name = "moe"
+version = "0.1.0"
+description = "API bindings for trace.moe"
+authors = ["Oleksii Filonenko <brightone@protonmail.com>"]
+homepage = "https://github.com/filalex77/moe"
+documentation = "https://docs.rs/moe"
+repository = "https://github.com/filalex77/moe"
+readme = "README.md"
+keywords = ["trace.moe", "anime", "recognition", "reverse", "search", "screenshots"]
+categories = ["api-bindings"]
+license = "MIT"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.10.1"
+reqwest = "0.9.19"
+serde = { version = "1.0.98", features = ["derive"] }
+snafu = "0.4.4"
+
+[dev-dependencies]
+lazy_static = "1.3.0"
+mockito = "0.20.0"
